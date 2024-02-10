@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:whats_app_copy/constants.dart';
 
 class BottomNavigation extends StatelessWidget
 {
@@ -18,10 +18,10 @@ class BottomNavigation extends StatelessWidget
         color: mainColor,
         child: TabBar(
           tabs: const [
-            Tab(child: Icon(Icons.comment, size: 25, color: Colors.white),),
-            Tab(child: Icon(Icons.person_add_alt_1, size: 25,color: Colors.white),),
-            Tab(child: Icon(Icons.videocam_rounded, size: 25,color: Colors.white),),
-            Tab(child: Icon(Icons.call_outlined, size: 25, color: Colors.white,),),
+            Tab(child: Icon(FontAwesomeIcons.solidCommentDots, size: 25,),),
+            Tab(child: Icon(FontAwesomeIcons.userPlus, size: 25,),),
+            Tab(child: Icon(FontAwesomeIcons.video, size: 25,),),
+            Tab(child: Icon(FontAwesomeIcons.phoneAlt, size: 25,),),
           ],
           controller: _tabController,
         ),
